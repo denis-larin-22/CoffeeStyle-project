@@ -1,0 +1,22 @@
+.container {
+    max-width: 1440px - 500px + 40px;
+    padding: 0 20px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+
+
+@mixin font-setting ($w, $s, $l) {
+    font-weight: $w;
+    font-size: $s;
+    line-height: $l;
+}
+// @include font-setting (400, 64px, 70px);
+
+
+.link-text {
+    @include font-setting (400, 12px, 18px);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
